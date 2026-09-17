@@ -1,0 +1,6 @@
+[project]
+name = "travel-assistant"
+version = "0.1.0"
+description = "Assistente virtuale per viaggi personalizzati - RAG travel challenge"
+requires-python = ">=3.11"
+dependencies = []
