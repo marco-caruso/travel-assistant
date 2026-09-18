@@ -5,6 +5,7 @@ description = "Assistente virtuale per viaggi personalizzati - RAG travel challe
 requires-python = ">=3.11"
 dependencies = [
     "anthropic>=0.40.0",
+    "chromadb>=0.5.0",
     "faker>=40.39.0",
     "python-dotenv>=1.0.0",
     "fastapi>=0.141.1",
