@@ -1,0 +1,278 @@
+{
+  "1": {
+    "descrizione": "Scopri i segreti della cucina parigina tradizionale in una lezione interattiva dove imparerai a preparare piatti autentici francesi da uno chef esperto.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "2": {
+    "descrizione": "Un affascinante tour guidato attraverso le strade storiche di Parigi, tra magnifici monumenti, architetture medioevali e rinascimentali, scoprendo i segreti e le storie affascinanti della Città della Luce.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "famiglie",
+      "giovani",
+      "coppie"
+    ]
+  },
+  "3": {
+    "descrizione": "Immergiti in una giornata di puro relax alle splendide terme parigine, dove rigenerarti tra vasche termali, massaggi e trattamenti benessere in un'atmosfera sofisticata.",
+    "categoria": [
+      "relax"
+    ],
+    "target": [
+      "coppie",
+      "altro"
+    ]
+  },
+  "4": {
+    "descrizione": "Una romantica crociera serale lungo la Senna a Parigi, con vista illuminata dei monumenti storici e atmosfera magica della città.",
+    "categoria": [
+      "relax",
+      "cultura"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "5": {
+    "descrizione": "Un'avventura outdoor tra i paesaggi montani intorno a Parigi, perfetta per scoprire la natura e godere di viste panoramiche. Un'attività ideale per chi ama le camminate e il contatto con l'ambiente naturale.",
+    "categoria": [
+      "sport",
+      "cultura"
+    ],
+    "target": [
+      "sportivi",
+      "famiglie"
+    ]
+  },
+  "6": {
+    "descrizione": "Serata indimenticabile in un affascinante locale di Barcellona dove godersi musica dal vivo in un'atmosfera vibrante e accogliente. Un'esperienza perfetta per assaporare la vivace vita notturna della città.",
+    "categoria": [
+      "nightlife"
+    ],
+    "target": [
+      "giovani",
+      "coppie"
+    ]
+  },
+  "7": {
+    "descrizione": "Un'emozionante escursione in bicicletta attraverso le strade e i parchi di Barcellona, perfetta per scoprire i principali monumenti e gli angoli nascosti della città in modo attivo e divertente.",
+    "categoria": [
+      "sport",
+      "cultura"
+    ],
+    "target": [
+      "giovani",
+      "sportivi",
+      "famiglie"
+    ]
+  },
+  "8": {
+    "descrizione": "Scopri le meraviglie dell'arte moderna e medievale nel suggestivo museo di Barcellona, un'esperienza culturale imperdibile che ti permette di ammirare capolavori di artisti rinomati.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "giovani",
+      "coppie",
+      "altro"
+    ]
+  },
+  "9": {
+    "descrizione": "Una crociera suggestiva lungo la costa di Barcellona al tramonto, con viste spettacolari della sagoma della città illuminata e l'atmosfera romantica del mare al calar della sera.",
+    "categoria": [
+      "relax",
+      "nightlife"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "10": {
+    "descrizione": "Un affascinante tour guidato attraverso le strette vie del centro storico di Barcellona, scoprendo l'architettura gotica e gli edifici medievali che caratterizzano il Barrio Gótico. Un'esperienza immersiva nei segreti e nella storia della capitale catalana.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "giovani",
+      "coppie",
+      "famiglie"
+    ]
+  },
+  "11": {
+    "descrizione": "Una crociera affascinante al tramonto lungo le coste di Atene, dove ammirare la città illuminata e i siti archeologici dal mare, accompagnata da musica e cena.",
+    "categoria": [
+      "relax",
+      "cultura"
+    ],
+    "target": [
+      "coppie",
+      "giovani",
+      "famiglie"
+    ]
+  },
+  "12": {
+    "descrizione": "Scopri i segreti della cucina greca autentica attraverso una lezione interattiva dove imparerai a preparare piatti tradizionali ateniesi con ingredienti locali e antiche ricette.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "famiglie",
+      "coppie",
+      "giovani"
+    ]
+  },
+  "13": {
+    "descrizione": "Esplora i magnifici monumenti dell'antica Grecia con una guida esperta che ti accompagna tra l'Acropoli, il Partenone e le affascinanti piazze del centro storico di Atene.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "famiglie",
+      "giovani",
+      "coppie"
+    ]
+  },
+  "14": {
+    "descrizione": "Un'affascinante escursione tra i monti che circondano Atene, ideale per scoprire la natura selvaggia e i panorami spettacolari della regione. Un'esperienza perfetta per chi ama il trekking e il contatto con l'ambiente naturale.",
+    "categoria": [
+      "sport"
+    ],
+    "target": [
+      "sportivi",
+      "famiglie"
+    ]
+  },
+  "15": {
+    "descrizione": "Immergiti in una giornata di puro relax presso le terme di Atene, dove potrai beneficiare di trattamenti benessere e sorgenti termali naturali. Un'esperienza rigenerante per corpo e mente nel cuore della capitale greca.",
+    "categoria": [
+      "relax"
+    ],
+    "target": [
+      "coppie",
+      "altro"
+    ]
+  },
+  "16": {
+    "descrizione": "Una serata in un'intima venue di Tokyo dove artisti locali e internazionali suonano dal vivo, creando un'atmosfera suggestiva tra buona musica e cocktail esclusivi.",
+    "categoria": [
+      "nightlife",
+      "cultura"
+    ],
+    "target": [
+      "giovani",
+      "coppie"
+    ]
+  },
+  "17": {
+    "descrizione": "Un'emozionante escursione in bicicletta attraverso i paesaggi urbani e naturali di Tokyo, scoprendo templi antichi, quartieri vivaci e giardini tradizionali su due ruote.",
+    "categoria": [
+      "sport",
+      "cultura"
+    ],
+    "target": [
+      "giovani",
+      "sportivi",
+      "famiglie"
+    ]
+  },
+  "18": {
+    "descrizione": "Immergiti nelle tradizionali terme giapponesi di Tokyo per una giornata di totale relax e benessere, godendo delle acque termali curative e dell'atmosfera tranquilla.",
+    "categoria": [
+      "relax"
+    ],
+    "target": [
+      "coppie",
+      "famiglie",
+      "altro"
+    ]
+  },
+  "19": {
+    "descrizione": "Un'affascinante escursione tra i monti intorno a Tokyo, perfetta per scoprire la natura rigogliosa giapponese e godere di viste panoramiche spettacolari sulla città.",
+    "categoria": [
+      "sport",
+      "cultura"
+    ],
+    "target": [
+      "sportivi",
+      "famiglie",
+      "giovani"
+    ]
+  },
+  "20": {
+    "descrizione": "Immergiti nell'affascinante mondo dell'arte giapponese e internazionale visitando uno dei musei di Tokyo, dove tradizione e modernità convivono in esposizioni straordinarie.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "giovani",
+      "coppie",
+      "altro"
+    ]
+  },
+  "21": {
+    "descrizione": "Un affascinante tour guidato che ti conduce alla scoperta dei monumenti storici e delle strade iconiche del centro di New York, dai grattacieli alle testimonianze del passato coloniale.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "famiglie",
+      "giovani",
+      "altro"
+    ]
+  },
+  "22": {
+    "descrizione": "Scopri le opere d'arte più importanti della storia nei prestigiosi musei di New York, come il Metropolitan Museum of Art o il MoMA. Un'esperienza culturale immersiva tra capolavori di artisti famosi da tutto il mondo.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "famiglie",
+      "giovani",
+      "coppie"
+    ]
+  },
+  "23": {
+    "descrizione": "Una serata affascinante in un esclusivo locale newyorkese dove artisti dal vivo esibiscono musica live in un'atmosfera intima e coinvolgente.",
+    "categoria": [
+      "nightlife",
+      "cultura"
+    ],
+    "target": [
+      "giovani",
+      "coppie"
+    ]
+  },
+  "24": {
+    "descrizione": "Un'escursione affascinante tra i percorsi montani intorno a New York, perfetta per esplorare la natura incontaminata e godere di panorami spettacolari lontano dal caos urbano.",
+    "categoria": [
+      "sport",
+      "relax"
+    ],
+    "target": [
+      "sportivi",
+      "famiglie",
+      "giovani"
+    ]
+  },
+  "25": {
+    "descrizione": "Una suggestiva crociera serale lungo i fiumi di New York che offre viste panoramiche dello skyline illuminato e un'atmosfera romantica con musica e cena.",
+    "categoria": [
+      "relax",
+      "nightlife"
+    ],
+    "target": [
+      "coppie",
+      "giovani",
+      "altro"
+    ]
+  }
+}
