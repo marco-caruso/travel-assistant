@@ -30,3 +30,23 @@ class AttivitaOut(BaseModel):
     costo: float
     disponibile_da: date
     disponibile_a: date
+
+class GiornoOut(BaseModel):
+    giorno: date
+    attivita: AttivitaOut | None = None  # None se per quel giorno non c'è un'attività adatta
+
+
+class ItinerarioOut(BaseModel):
+    nazione: str
+    citta: str
+    notti: int
+    volo_andata: VoloOut
+    volo_ritorno: VoloOut
+    hotel: HotelOut
+    giorni: list[GiornoOut]
+    costo_voli: float
+    costo_hotel: float
+    costo_attivita: float
+    costo_totale: float
+    budget: float
+    avvisi: list[str] = []
