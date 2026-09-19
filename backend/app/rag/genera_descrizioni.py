@@ -36,7 +36,7 @@ class DescrizioneGenerata(BaseModel):
     fallire la validazione quando Claude, giustamente, prova a dirne due.
     """
     descrizione: str
-    categoria: list[Literal["cultura", "sport", "relax", "nightlife", "altro"]]
+    categoria: list[Literal["cultura", "sport", "relax", "nightlife", "natura", "altro"]]
     target: list[Literal["famiglie", "giovani", "sportivi", "coppie", "altro"]]
 
 
@@ -55,7 +55,7 @@ STRUMENTO_CLASSIFICAZIONE = {
             },
             "categoria": {
                 "type": "array",
-                "items": {"type": "string", "enum": ["cultura", "sport", "relax", "nightlife", "altro"]},
+                "items": {"type": "string", "enum": ["cultura", "sport", "relax", "nightlife", "natura", "altro"]},
                 "description": "Una o più categorie a cui appartiene l'attività.",
             },
             "target": {
@@ -69,6 +69,25 @@ STRUMENTO_CLASSIFICAZIONE = {
 }
 
 
+CATEGORIE_AMMESSE = ["cultura", "sport", "relax", "nightlife", "natura", "altro"]
+TARGET_AMMESSI = ["famiglie", "giovani", "sportivi", "coppie", "altro"]
+
+
+def tieni_solo_ammessi(valori: list[str], ammessi: list[str]) -> list[str]:
+    """Scarta i valori fuori vocabolario (es. "gastronomia"); se non ne resta nessuno usa "altro"."""
+    validi = [v for v in valori if v in ammessi]
+    return validi or ["altro"]
+
+
+def prepara_risposta(dati: dict) -> dict:
+    """Ripulisce categoria e target prima della validazione Pydantic."""
+    return {
+        **dati,
+        "categoria": tieni_solo_ammessi(dati.get("categoria", []), CATEGORIE_AMMESSE),
+        "target": tieni_solo_ammessi(dati.get("target", []), TARGET_AMMESSI),
+    }
+
+
 def genera_descrizione_per_attivita(nome: str, citta: str, tentativi: int = 3) -> DescrizioneGenerata:
     """Chiede a Claude descrizione + categoria + target per una singola attività.
 
@@ -77,7 +96,10 @@ def genera_descrizione_per_attivita(nome: str, citta: str, tentativi: int = 3) -
     rischio che Claude si inventi un valore fuori dall'enum. Il retry resta come
     rete di sicurezza per i casi residui.
     """
-    prompt = f'Attività: "{nome}" a {citta}. Descrivila brevemente e classificala.'
+    prompt = (
+        f'Attività: "{nome}" a {citta}. Descrivila brevemente e classificala. '
+        "Per categoria e target usa solo i valori consentiti."
+    )
 
     for tentativo in range(1, tentativi + 1):
         risposta = client.messages.create(
@@ -89,7 +111,7 @@ def genera_descrizione_per_attivita(nome: str, citta: str, tentativi: int = 3) -
         )
         blocco_tool = next(b for b in risposta.content if b.type == "tool_use")
         try:
-            return DescrizioneGenerata.model_validate(blocco_tool.input)
+            return DescrizioneGenerata.model_validate(prepara_risposta(blocco_tool.input))
         except ValidationError as errore:
             print(f"  tentativo {tentativo}/{tentativi} non valido ({errore}), riprovo...")
 

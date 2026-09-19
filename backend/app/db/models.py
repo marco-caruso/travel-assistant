@@ -48,7 +48,10 @@ class Attivita(Base):
     nome: Mapped[str] = mapped_column(String(150))
     citta: Mapped[str] = mapped_column(String(100))
     costo: Mapped[float]
-    data_disponibile: Mapped[date]
+    # Intervallo di disponibilità (come per gli hotel), non una data singola:
+    # una data sola renderebbe quasi impossibile trovare un'attività per ogni giorno.
+    disponibile_da: Mapped[date]
+    disponibile_a: Mapped[date]
 
 
 class Prenotazione(Base):
@@ -56,7 +59,9 @@ class Prenotazione(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     utente_id: Mapped[int] = mapped_column(ForeignKey("utenti.id"))
-    volo_id: Mapped[int] = mapped_column(ForeignKey("voli.id"))
+    # Due chiavi verso la stessa tabella "voli": andata e ritorno.
+    volo_andata_id: Mapped[int] = mapped_column(ForeignKey("voli.id"))
+    volo_ritorno_id: Mapped[int] = mapped_column(ForeignKey("voli.id"))
     hotel_id: Mapped[int] = mapped_column(ForeignKey("hotel.id"))
     stato: Mapped[str] = mapped_column(String(20), default="in_attesa")
     data_da: Mapped[date]
@@ -64,7 +69,10 @@ class Prenotazione(Base):
     costo_totale: Mapped[float]
 
     utente: Mapped["Utente"] = relationship(back_populates="prenotazioni")
-    volo: Mapped["Volo"] = relationship()
+    # Con due FK verso la stessa tabella SQLAlchemy non sa quale usare:
+    # foreign_keys lo dice esplicitamente per ogni relationship.
+    volo_andata: Mapped["Volo"] = relationship(foreign_keys=[volo_andata_id])
+    volo_ritorno: Mapped["Volo"] = relationship(foreign_keys=[volo_ritorno_id])
     hotel: Mapped["Hotel"] = relationship()
     attivita: Mapped[list["PrenotazioneAttivita"]] = relationship(back_populates="prenotazione")
 

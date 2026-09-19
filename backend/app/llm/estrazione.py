@@ -19,7 +19,7 @@ class RichiestaViaggio(BaseModel):
     forniti dall'utente restano None (o lista vuota per le preferenze)."""
     budget: Optional[float] = None
     nazione: Optional[str] = None
-    preferenze: list[Literal["cultura", "sport", "relax", "nightlife", "altro"]] = []
+    preferenze: list[Literal["cultura", "sport", "relax", "nightlife", "natura", "altro"]] = []
     periodo: Optional[str] = None  # mese di viaggio, es. "giugno"
 
 
@@ -44,7 +44,7 @@ STRUMENTO_ESTRAZIONE = {
                 "type": "array",
                 "items": {
                     "type": "string",
-                    "enum": ["cultura", "sport", "relax", "nightlife", "altro"],
+                    "enum": ["cultura", "sport", "relax", "nightlife", "natura", "altro"],
                 },
                 "description": "Preferenze sulle attività menzionate finora (anche vuota).",
             },

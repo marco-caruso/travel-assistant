@@ -28,4 +28,5 @@ class AttivitaOut(BaseModel):
     nome: str
     citta: str
     costo: float
-    data_disponibile: date
+    disponibile_da: date
+    disponibile_a: date
