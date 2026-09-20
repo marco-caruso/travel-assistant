@@ -2,9 +2,7 @@
 # del database (SQLAlchemy) in JSON valido, tramite Pydantic.
 from datetime import date
 from typing import Literal
-
-from pydantic import BaseModel, ConfigDict
-
+from pydantic import BaseModel, ConfigDict, Field
 from app.llm.estrazione import RichiestaViaggio
 
 
@@ -66,6 +64,19 @@ class ChatRichiesta(BaseModel):
 
 
 class ChatRisposta(BaseModel):
-    risposta: str                          # testo da mostrare all'utente
-    richiesta: RichiestaViaggio            # dati raccolti finora (utile per debug e frontend)
+    risposta: str # testo da mostrare all'utente
+    richiesta: RichiestaViaggio # dati raccolti finora (utile per debug e frontend)
     itinerario: ItinerarioOut | None = None  # presente solo quando è stato generato
+
+class RegistrazioneIn(BaseModel):
+    nome: str = Field(min_length=1, max_length=100)
+    email: str = Field(pattern=r"^[^@\s]+@[^@\s]+\.[^@\s]+$", max_length=255)
+    password: str = Field(min_length=8, max_length=128)
+
+
+class UtenteOut(BaseModel):
+    """Volutamente senza password né hash: non devono mai uscire dall'API."""
+    model_config = ConfigDict(from_attributes=True)
+    id: int
+    nome: str
+    email: str
