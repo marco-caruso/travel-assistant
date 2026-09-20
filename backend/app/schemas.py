@@ -1,8 +1,11 @@
 # Definizione della forma dei dati che l'API restituisce: converte gli oggetti
 # del database (SQLAlchemy) in JSON valido, tramite Pydantic.
 from datetime import date
+from typing import Literal
 
 from pydantic import BaseModel, ConfigDict
+
+from app.llm.estrazione import RichiestaViaggio
 
 
 class HotelOut(BaseModel):
@@ -50,3 +53,19 @@ class ItinerarioOut(BaseModel):
     costo_totale: float
     budget: float
     avvisi: list[str] = []
+
+class MessaggioChat(BaseModel):
+    """Un messaggio della conversazione, nello stesso formato usato dall'API di Anthropic."""
+    role: Literal["user", "assistant"]
+    content: str
+
+
+class ChatRichiesta(BaseModel):
+    # L'intera conversazione fin qui: il server non tiene memoria tra una chiamata e l'altra
+    messaggi: list[MessaggioChat]
+
+
+class ChatRisposta(BaseModel):
+    risposta: str                          # testo da mostrare all'utente
+    richiesta: RichiestaViaggio            # dati raccolti finora (utile per debug e frontend)
+    itinerario: ItinerarioOut | None = None  # presente solo quando è stato generato
