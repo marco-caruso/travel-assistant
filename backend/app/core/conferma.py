@@ -20,13 +20,14 @@ CONFERMA = {
     "prenotiamo", "prenotami", "procedi", "perfetto", "vai", "benissimo", "volentieri", "bene",
     "d", "accordo",
 }
-RIFIUTO = {"no", "non", "annulla", "basta", "stop", "lascia", "perdere"}
+RIFIUTO = {"no", "non", "annulla", "basta", "stop", "lascia", "perdere", "nulla", "niente"}
 
 # Parole che non cambiano il senso: si accettano in entrambi i casi
 NEUTRE = {
     "pure", "grazie", "va", "il", "lo", "la", "l", "viaggio", "itinerario", "questo", "e", "per",
     "favore", "adesso", "ora", "subito", "allora", "dai", "proprio", "mi", "piace", "voglio",
-    "prenotare", "prenotarlo", "piu", "ancora", "di", "ho", "cambiato", "idea",
+    "prenotare", "prenotarlo", "prenoto", "piu", "ancora", "di", "ho", "cambiato", "idea",
+    "interessa",
 }
 
 

@@ -208,6 +208,18 @@ def prenota_con_pulsante():
         st.error("Non è stato possibile prenotare. Riprova.")
 
 
+def annulla_proposta():
+    """Rifiuto esplicito. La proposta esiste solo nel client (il server non tiene stato),
+    quindi per annullarla basta azzerarla."""
+    st.session_state.proposta = None
+    st.session_state.messaggi.append({
+        "role": "assistant",
+        "content": "Va bene, non prenoto. Se vuoi, dimmi cosa cambiare (nazione, mese, "
+        "attività o budget) e preparo un'altra proposta.",
+    })
+    st.rerun()
+
+
 def mostra_destinazioni():
     """Riga sempre visibile sotto il titolo: le destinazioni offerte, lette dal backend."""
     risposta = chiama("GET", "/destinazioni")
@@ -231,8 +243,12 @@ def pagina_chat():
             if m.get("itinerario"):
                 with st.expander("Dettagli dell'itinerario", expanded=(i == len(messaggi) - 1)):
                     mostra_itinerario(m["itinerario"])
-    if st.session_state.proposta and st.button("Prenota questo itinerario", type="primary"):
-        prenota_con_pulsante()
+    if st.session_state.proposta:
+        col_prenota, col_annulla, _ = st.columns([2, 2, 3])
+        if col_prenota.button("Prenota questo itinerario", type="primary"):
+            prenota_con_pulsante()
+        if col_annulla.button("Non prenotare"):
+            annulla_proposta()
     testo = st.chat_input("Scrivi qui il tuo messaggio")
     if testo:
         st.session_state.esito = None
