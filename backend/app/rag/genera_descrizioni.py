@@ -98,7 +98,12 @@ def genera_descrizione_per_attivita(nome: str, citta: str, tentativi: int = 3) -
     """
     prompt = (
         f'Attività: "{nome}" a {citta}. Descrivila brevemente e classificala. '
-        "Per categoria e target usa solo i valori consentiti."
+        "Per categoria e target usa solo i valori consentiti. "
+        "Scegli solo le categorie davvero caratterizzanti: di solito una, al massimo due, "
+        "la principale per prima. Usa «cultura» solo per musei, monumenti, siti storici e "
+        "visite guidate; «natura» per parchi, giardini, mare e montagna; «sport» per attività "
+        "fisiche; «relax» per benessere e momenti tranquilli; «nightlife» per le serate. "
+        "Nella descrizione racconta l'esperienza concreta: l'ambiente, il ritmo, cosa si fa."
     )
 
     for tentativo in range(1, tentativi + 1):

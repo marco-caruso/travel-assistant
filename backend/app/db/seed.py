@@ -45,7 +45,7 @@ COSTO_VOLO = {
 # Attività specifiche per città: nomi coerenti con i luoghi reali, altrimenti il modello
 # che genera le descrizioni inventa cose senza senso (es. "montagne parigine").
 # Ogni città ha lo stesso mix (cultura, natura/sport, relax, nightlife), così le preferenze
-# dell'utente trovano corrispondenze in qualunque destinazione.
+# dell'utente trovano corrispondenze in qualunque destinazione. Altre 7 per città sono più sotto.
 ATTIVITA_PER_CITTA = {
     "Parigi": [
         "Visita al Museo del Louvre",
@@ -100,6 +100,58 @@ ATTIVITA_PER_CITTA = {
 }
 
 
+# Attività aggiuntive (7 per città, 15 in totale con quelle sopra). Il catalogo deve essere
+# molto più grande del numero di giorni da riempire (3-5): con poche attività entrerebbero
+# quasi tutte qualunque siano le preferenze, e la ricerca semantica non farebbe differenza.
+ATTIVITA_EXTRA_PER_CITTA = {
+    "Parigi": [
+        "Visita al Museo d'Orsay",
+        "Visita alle Catacombe di Parigi",
+        "Passeggiata nel Bois de Boulogne",
+        "Corsa guidata lungo il Canal Saint-Martin",
+        "Escursione in canoa sulla Marna",
+        "Percorso in un hammam tradizionale con massaggio",
+        "Serata in un jazz club di Saint-Germain",
+    ],
+    "Barcellona": [
+        "Visita a Casa Batlló e Casa Milà",
+        "Tour del Barri Gòtic",
+        "Passeggiata nel Parc Güell",
+        "Giro in kayak lungo la costa di Barcellona",
+        "Escursione in e-bike sulla collina del Montjuïc",
+        "Pomeriggio di relax in un centro termale del centro storico",
+        "Serata di musica elettronica in un club sul lungomare",
+    ],
+    "Atene": [
+        "Visita all'Agorà antica e al Tempio di Efesto",
+        "Visita al Museo dell'Acropoli",
+        "Passeggiata nel Giardino Nazionale",
+        "Lezione di windsurf sulla riviera di Atene",
+        "Gita in barca a vela lungo la riviera ateniese",
+        "Percorso spa e massaggio in un centro benessere di Kolonaki",
+        "Serata in una taverna con musica greca dal vivo a Plaka",
+    ],
+    "Tokyo": [
+        "Visita al tempio Meiji e ai suoi giardini",
+        "Tour dei quartieri di Akihabara e della cultura pop",
+        "Passeggiata nel parco di Ueno",
+        "Lezione di judo in un dojo tradizionale",
+        "Gita in giornata ai laghi del monte Fuji",
+        "Cerimonia del tè in una sala tradizionale",
+        "Serata nei piccoli bar di Golden Gai",
+    ],
+    "New York": [
+        "Visita al Museo di Storia Naturale",
+        "Visita al MoMA",
+        "Passeggiata nel Prospect Park a Brooklyn",
+        "Lezione di boxe in una palestra di Brooklyn",
+        "Escursione in kayak sull'Hudson",
+        "Lezione di yoga all'aperto a Bryant Park",
+        "Serata di stand-up comedy in un club del Lower East Side",
+    ],
+}
+
+
 def crea_voli(session: Session, oggi: date, citta: str, aeroporto_arrivo: str) -> None:
     """Per ogni aeroporto di partenza crea voli di andata e di ritorno su giorni casuali."""
     costo_min, costo_max = COSTO_VOLO[citta]
@@ -129,7 +181,7 @@ def crea_dati(session: Session) -> None:
         session.add(Utente(
             nome=fake.name(),
             email=fake.unique.email(),
-            password_hash="placeholder",  # la gestiamo quando scriviamo l'autenticazione
+            password_hash="placeholder",  # utenti di esempio: nessuno può accedere, ci si registra dall'app
         ))
 
     for destinazione in DESTINAZIONI.values():
@@ -154,7 +206,7 @@ def crea_dati(session: Session) -> None:
                 disponibile_a=disponibile_a,
             ))
 
-        # Attività: le 8 specifiche della città, disponibili quasi per tutto l'orizzonte dei voli
+        # Attività: le prime 8 della città, disponibili quasi per tutto l'orizzonte dei voli
         for nome_attivita in ATTIVITA_PER_CITTA[citta]:
             disponibile_da = oggi + timedelta(days=random.randint(0, 5))
             disponibile_a = oggi + timedelta(days=random.randint(GIORNI_COPERTURA - 30, GIORNI_COPERTURA))
@@ -162,6 +214,22 @@ def crea_dati(session: Session) -> None:
                 nome=nome_attivita,
                 citta=citta,
                 costo=round(random.uniform(10, 150), 2),
+                disponibile_da=disponibile_da,
+                disponibile_a=disponibile_a,
+            ))
+
+    # Attività aggiuntive: create per ultime e con un generatore casuale a parte, così
+    # aggiungerle non cambia voli, hotel e le prime 40 attività (id 1-40 restano gli stessi).
+    rng_extra = random.Random(SEED_CASUALE + 1)
+    for destinazione in DESTINAZIONI.values():
+        citta = destinazione["citta"]
+        for nome_attivita in ATTIVITA_EXTRA_PER_CITTA[citta]:
+            disponibile_da = oggi + timedelta(days=rng_extra.randint(0, 5))
+            disponibile_a = oggi + timedelta(days=rng_extra.randint(GIORNI_COPERTURA - 30, GIORNI_COPERTURA))
+            session.add(Attivita(
+                nome=nome_attivita,
+                citta=citta,
+                costo=round(rng_extra.uniform(10, 150), 2),
                 disponibile_da=disponibile_da,
                 disponibile_a=disponibile_a,
             ))

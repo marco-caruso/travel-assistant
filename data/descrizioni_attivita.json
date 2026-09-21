@@ -1,56 +1,51 @@
 {
   "1": {
-    "descrizione": "Il Museo del Louvre di Parigi è uno dei musei più importanti al mondo, che ospita capolavori dell'arte come la Gioconda e la Venere di Milo. Una visita imperdibile per gli amanti dell'arte e della storia culturale europea.",
+    "descrizione": "Un'immersione tra i capolavori dell'arte mondiale, dalla Gioconda ai tesori della scultura egizia. Percorri le gallerie senza fretta, lasciandoti affascinare dai dipinti e dalle opere, scoprendo ogni sala con la magia dell'arte che ti circonda.",
     "categoria": [
       "cultura"
-    ],
-    "target": [
-      "famiglie",
-      "giovani",
-      "altro"
-    ]
-  },
-  "2": {
-    "descrizione": "Scopri i vicoli affascinanti e la storia artistica di Montmartre con una guida esperta, visitando la Basilica del Sacro Cuore e gli storici caffè letterari del quartiere.",
-    "categoria": [
-      "cultura",
-      "altro"
     ],
     "target": [
       "coppie",
-      "giovani",
-      "altro"
+      "giovani"
     ]
   },
-  "3": {
-    "descrizione": "Un'affascinante giro in bicicletta lungo le rive della Senna a Parigi, ammirando i monumenti storici e i paesaggi urbani. Un'esperienza ideale per scoprire la capitale francese pedalando tra ponti, isole e quartieri pittoreschi.",
+  "2": {
+    "descrizione": "Un affascinante percorso tra le stradine pittoresche e gli atelier bohémien di Montmartre, dove scoprire la basilica del Sacro Cuore, le piazze storiche e i luoghi che hanno ispirato artisti come Van Gogh. Una passeggiata ricca di storia e atmosfera, tra negozietti caratteristici e vedute panoramiche di Parigi.",
     "categoria": [
-      "sport",
-      "natura",
       "cultura"
     ],
     "target": [
-      "famiglie",
+      "coppie",
+      "famiglie"
+    ]
+  },
+  "3": {
+    "descrizione": "Pedalata rilassata lungo le rive della Senna, tra ponti storici e scorci parigini: una piacevole esperienza all'aria aperta che regala una prospettiva suggestiva della città.",
+    "categoria": [
+      "natura",
+      "sport"
+    ],
+    "target": [
       "giovani",
-      "coppie"
+      "coppie",
+      "famiglie"
     ]
   },
   "4": {
-    "descrizione": "Visita dei magnifici giardini della Reggia di Versailles, capolavoro dell'architettura paesaggistica francese con fontane, viali alberati e aiuole geometriche.",
+    "descrizione": "Una passeggiata tra i magnifici giardini all'italiana della Reggia di Versailles, con fontane, viali alberati e specchi d'acqua dove perdersi in un'atmosfera di tranquillità e bellezza paesaggistica. Un'esperienza ideale per rilassarsi camminando tra le prospettive geometriche e godere della serenità della natura curata.",
     "categoria": [
-      "cultura",
       "natura"
     ],
     "target": [
-      "famiglie",
-      "coppie"
+      "coppie",
+      "famiglie"
     ]
   },
   "5": {
-    "descrizione": "Una romantica crociera serale lungo la Senna che offre viste panoramiche dei monumenti parigini illuminati, con possibilità di cena e musica a bordo.",
+    "descrizione": "Una serata magica navigando sulla Senna al tramonto, ammirando i monumenti illuminati di Parigi dal fiume mentre si cena o si sorseggia champagne in un'atmosfera romantica e suggestiva.",
     "categoria": [
-      "cultura",
-      "relax"
+      "nightlife",
+      "cultura"
     ],
     "target": [
       "coppie",
@@ -58,21 +53,19 @@
     ]
   },
   "6": {
-    "descrizione": "Pomeriggio di relax in una spa del centro di Parigi, con trattamenti rigeneranti e benessere per staccare dalla frenesia della città.",
+    "descrizione": "Un'oasi di tranquillità nel cuore di Parigi dove abbandonarsi a trattamenti wellness: massaggi rigeneranti, saune profumate e piscine riscaldate in un'atmosfera intimista e lontana dal trambusto cittadino.",
     "categoria": [
       "relax"
     ],
     "target": [
       "coppie",
-      "giovani",
       "altro"
     ]
   },
   "7": {
-    "descrizione": "Una serata di cabaret a Pigalle, il quartiere parigino più celebre per i suoi spettacoli di varietà e danza, dove assistere a esibizioni di intrattenimento di classe mondiale.",
+    "descrizione": "Una serata di spettacolo e divertimento a Pigalle, nel celebre quartiere parigino della movida notturna, dove il cabaret propone show vivaci con musica, balli e risate in un'atmosfera festosa e raffinata.",
     "categoria": [
-      "nightlife",
-      "cultura"
+      "nightlife"
     ],
     "target": [
       "giovani",
@@ -80,40 +73,38 @@
     ]
   },
   "8": {
-    "descrizione": "Impara a preparare piatti autentici della cucina francese con uno chef esperto nel cuore di Parigi. Un'esperienza culinaria immersiva che combina tradizione e tecnica.",
+    "descrizione": "Impara a preparare piatti autentici della cucina francese in un'atmosfera accogliente parigina, dove uno chef esperto ti guida passo dopo passo nella realizzazione di ricette tradizionali. Tra profumi di burro e erbe aromatiche, scopri i segreti della gastronomia francese in un'esperienza immersiva e conviviale.",
     "categoria": [
-      "cultura"
+      "relax"
     ],
     "target": [
-      "famiglie",
       "coppie",
       "altro"
     ]
   },
   "9": {
-    "descrizione": "Esplora il capolavoro architettonico di Gaudí, la Sagrada Família, una basilica incomparabile caratterizzata da un design innovativo e da dettagli straordinari che affascinano visitatori da tutto il mondo.",
+    "descrizione": "Ammira il capolavoro incompiuto di Gaudí con le sue facciate scolpite e gli interni avvolgenti, poi passeggia tra gli edifici modernisti più straordinari di Barcellona immerso in architetture che sfidano la geometria.",
     "categoria": [
       "cultura"
     ],
     "target": [
-      "famiglie",
       "giovani",
       "coppie"
     ]
   },
   "10": {
-    "descrizione": "Escursione affascinante al monastero benedettino di Montserrat, incastonato tra le spettacolari montagne rocciose catalane. Visita il complesso religioso storico, la basilica e le cappelle, immerso in uno scenario naturale di rara bellezza.",
+    "descrizione": "Escursione tra le maestose formazioni rocciose di Montserrat, circondati da panorami spettacolari sui monti della Catalogna. Un'esperienza di trekking immersi nella natura selvaggia e nella spiritualità del monastero benedettino, tra sentieri panoramici e angoli di contemplazione.",
     "categoria": [
-      "cultura",
       "natura"
     ],
     "target": [
-      "famiglie",
-      "coppie"
+      "giovani",
+      "coppie",
+      "sportivi"
     ]
   },
   "11": {
-    "descrizione": "Un'affascinante pedalata lungo il lungomare di Barcellona, dove ammirare le spiagge e il paesaggio costiero catalano in una splendida atmosfera mediterranea.",
+    "descrizione": "Pedalare lungo la costa di Barcellona ammirando il mare e le spiagge, con lo sfondo della città che si estende su entrambi i lati: un'esperienza attiva che combina movimento, natura e paesaggi urbani in un'atmosfera rilassante.",
     "categoria": [
       "sport",
       "natura"
@@ -121,14 +112,14 @@
     "target": [
       "giovani",
       "famiglie",
-      "sportivi"
+      "coppie"
     ]
   },
   "12": {
-    "descrizione": "Trascorri una giornata rilassante sulla spiaggia della Barceloneta a Barcellona, godendo del sole, del mare e dell'atmosfera vivace del litorale.",
+    "descrizione": "Una giornata indimenticabile sulla spiaggia urbana della Barceloneta, dove potrai rilassarti sul sabato dorato, fare il bagno nelle acque azzurre del Mediterraneo e goderti la vivace atmosfera tra stabilimenti balneari e locali sulla riva.",
     "categoria": [
-      "relax",
-      "natura"
+      "natura",
+      "relax"
     ],
     "target": [
       "famiglie",
@@ -137,20 +128,17 @@
     ]
   },
   "13": {
-    "descrizione": "Un'affascinante crociera al tramonto lungo la costa di Barcellona, perfetta per ammirare la città da una prospettiva unica mentre il sole cala sull'orizzonte del Mediterraneo. Un'esperienza romantica e indimenticabile ideale per godersi il paesaggio costiero.",
+    "descrizione": "Una crociera affascinante al tramonto lungo le coste di Barcellona, dove ammiri la skyline che si tinge d'oro mentre le onde cullano la barca e l'atmosfera romantica avvolge la serata.",
     "categoria": [
-      "relax",
-      "natura"
+      "relax"
     ],
     "target": [
-      "coppie",
-      "giovani"
+      "coppie"
     ]
   },
   "14": {
-    "descrizione": "Immergiti nella passione del flamenco autentico nel cuore del Born, accompagnato da deliziose tapas e vini spagnoli in un'atmosfera vibrante e tradizionale.",
+    "descrizione": "Immergiti nel cuore della Barcellona più autentica con una serata di flamenco dal vivo nel barrio del Born, dove musica, danza e il fascino hipnotico dei ritmi spagnoli si intrecciano tra i tavoli intimi di un locale tradizionale. Assapora piatti di tapas iberiche mentre la passione e l'energia dei ballerini ti catturano in un'atmosfera vibrante e irresistibile.",
     "categoria": [
-      "cultura",
       "nightlife"
     ],
     "target": [
@@ -159,63 +147,60 @@
     ]
   },
   "15": {
-    "descrizione": "Visita al celebre Museo Picasso di Barcellona, che espone una straordinaria collezione di opere del maestro spagnolo in un palazzo medievale nel Gothic Quarter. Un'esperienza imprescindibile per gli amanti dell'arte moderna e della storia culturale.",
+    "descrizione": "Immergiti nell'affascinante percorso artistico di Pablo Picasso attraverso le sale del suo omonimo museo barcelonese, ammirando i capolavori che raccontano l'evoluzione del genio cubista in un'atmosfera intima e contemplativa.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "16": {
+    "descrizione": "Impara a preparare piatti tipici catalani in una cucina autentica di Barcellona: tagliate gli ingredienti freschi, cuocete le specialità locali seguendo le ricette tradizionali e terminate con una degustazione conviviale dei vostri piatti.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "17": {
+    "descrizione": "Un'esperienza immersiva tra i capolavori dell'antica Grecia: ammiri il maestoso Partenone dalle terrazze dell'Acropoli mentre scopri millenni di storia attraverso le rovine e i templi che si stagliano contro il cielo di Atene.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "famiglie",
+      "coppie",
+      "altro"
+    ]
+  },
+  "18": {
+    "descrizione": "Percorso affascinante tra i tesori dell'antica Grecia, dalle sculture classiche ai reperti delle civiltà preistorica e minoica, in sale luminose che raccontano millenni di storia con una lentezza contemplativa.",
     "categoria": [
       "cultura"
     ],
     "target": [
       "giovani",
       "coppie",
-      "altro"
-    ]
-  },
-  "16": {
-    "descrizione": "Impara i segreti della cucina catalana tradizionale in una lezione pratica guidata da uno chef esperto a Barcellona, dove preparerai piatti autentici della regione.",
-    "categoria": [
-      "cultura"
-    ],
-    "target": [
-      "famiglie",
-      "giovani",
-      "coppie"
-    ]
-  },
-  "17": {
-    "descrizione": "Visita ai monumenti più iconici della Grecia antica, dove ammirare il maestoso Partenone e l'affascinante complesso dell'Acropoli con vista panoramica sulla città di Atene.",
-    "categoria": [
-      "cultura"
-    ],
-    "target": [
-      "famiglie",
-      "giovani",
-      "coppie"
-    ]
-  },
-  "18": {
-    "descrizione": "Il Museo Archeologico Nazionale di Atene conserva una delle più importanti collezioni di reperti dell'antica Grecia, con capolavori che spaziano dalla preistoria al periodo romano. Un'esperienza imprescindibile per scoprire la storia e la civiltà greco-romana.",
-    "categoria": [
-      "cultura"
-    ],
-    "target": [
-      "famiglie",
-      "giovani",
       "altro"
     ]
   },
   "19": {
-    "descrizione": "Escursione affascinante sulla collina più alta di Atene, che offre una vista panoramica straordinaria della città e dell'Acropoli. Un'esperienza ideale per scoprire la bellezza paesaggistica e la storia della capitale greca.",
+    "descrizione": "Salita al Licabetto, la collina più alta di Atene, per godere di panorami spettacolari sulla città e l'Acropoli. Un'escursione a piedi tra sentieri immersi nel verde che regala tramonti indimenticabili e momenti di pace lontano dal caos urbano.",
     "categoria": [
       "natura",
-      "cultura"
+      "relax"
     ],
     "target": [
-      "giovani",
       "coppie",
-      "famiglie"
+      "sportivi"
     ]
   },
   "20": {
-    "descrizione": "Una suggestiva visita al celebre tempio di Poseidone arroccato su una scogliera a strapiombo sul mare Egeo, godendo dello spettacolare tramonto che illumina le rovine antiche in tonalità dorate.",
+    "descrizione": "Ascesa al tempio di Atena Sounias arroccato sulla scogliera rocciosa, con vista panoramica sull'Egeo. Si conclude al tramonto, quando la luce dora le colonne antiche e il mare sottostante si accende di arancio e rosso, regalando un momento di contemplazione suggestiva tra storia e natura.",
     "categoria": [
       "cultura",
       "natura"
@@ -226,20 +211,18 @@
     ]
   },
   "21": {
-    "descrizione": "Una crociera giornaliera che permette di esplorare le affascinanti isole del Golfo Saronico con soste per bagni e visite culturali.",
+    "descrizione": "Una giornata in barca tra le isole del Golfo Saronico, con soste per nuotare in acque cristalline e visitare pittoreschi villaggi costieri. Un'esperienza rilassante di mare e paesaggi mediterranei tra vela, sole e tranquillità.",
     "categoria": [
       "natura",
-      "cultura",
       "relax"
     ],
     "target": [
-      "famiglie",
       "coppie",
-      "giovani"
+      "famiglie"
     ]
   },
   "22": {
-    "descrizione": "Immergiti nelle acque termali naturali del lago di Vouliagmeni, un'oasi di relax con proprietà terapeutiche a pochi km da Atene. Perfetto per rigenerarsi e godere del benessere in un'atmosfera tranquilla e suggestiva.",
+    "descrizione": "Una giornata rigenerante alle acque termali naturali del lago di Vouliagmeni, dove lasciarsi cullare in acque calde che mantengono la stessa temperatura tutto l'anno. Un'esperienza di benessere immersi nella natura, tra relax e momenti di puro dolce far niente.",
     "categoria": [
       "relax",
       "natura"
@@ -250,9 +233,8 @@
     ]
   },
   "23": {
-    "descrizione": "Una serata indimenticabile di musica dal vivo nel pittoresco quartiere di Psyrri ad Atene, dove artisti locali e internazionali si esibiscono in venue intimi e affascinanti tra le strade storiche.",
+    "descrizione": "Immergiti nella vibrante scena musicale del quartiere di Psyrri, dove i locali tradizionali e gli spazi alternativi ospitano esibizioni di artisti locali in un'atmosfera intima e carica di energia. La musica dal vivo risuona nelle stradette acciottolate mentre il pubblico balla, beve e celebra la notte ateniese.",
     "categoria": [
-      "cultura",
       "nightlife"
     ],
     "target": [
@@ -261,67 +243,73 @@
     ]
   },
   "24": {
-    "descrizione": "Scopri i segreti della cucina tradizionale greca con una lezione interattiva guidata da chef locali ad Atene. Impara a preparare piatti autentici utilizzando ingredienti tipici del Mediterraneo.",
+    "descrizione": "Impara a preparare piatti autentici della cucina greca in un'aula accogliente ad Atene, guidato da uno chef locale che condivide segreti tradizionali e aneddoti sulla gastronomia ellenica.",
+    "categoria": [
+      "relax"
+    ],
+    "target": [
+      "coppie",
+      "famiglie"
+    ]
+  },
+  "25": {
+    "descrizione": "Passeggiata affascinante nel cuore del vecchio Tokyo tra le strade storiche di Asakusa, culminando nella visita al maestoso tempio Senso-ji circondato da lanterne rosse e bancarelle tradizionali. Una guida esperta racconta la storia millenaria del luogo mentre si cammina tra atmosfere autentiche e architettura antica.",
     "categoria": [
       "cultura"
     ],
     "target": [
       "famiglie",
-      "coppie"
-    ]
-  },
-  "25": {
-    "descrizione": "Tour guidato che esplora il fascino tradizionale del quartiere di Asakusa e il maestoso tempio Senso-ji, uno dei santuari più antichi di Tokyo ricco di storia e spiritualità.",
-    "categoria": [
-      "cultura",
-      "natura"
-    ],
-    "target": [
-      "famiglie",
-      "giovani",
       "coppie"
     ]
   },
   "26": {
-    "descrizione": "Una visita al prestigioso Museo Nazionale di Tokyo, che ospita una straordinaria collezione di arte e manufatti giapponesi tradizionali e contemporanei, perfetta per immergersi nella ricca cultura nipponica.",
+    "descrizione": "Scopri le opere d'arte classiche e contemporanea del più grande museo del Giappone, camminando tra sale luminose che custodiscono capolavori della tradizione giapponese e internazionale. Un'esperienza immersiva tra dipinti, sculture e oggetti storici che racconta la ricchezza culturale di Tokyo.",
     "categoria": [
       "cultura"
     ],
     "target": [
-      "famiglie",
-      "giovani",
-      "altro"
-    ]
-  },
-  "27": {
-    "descrizione": "Escursione affascinante sul monte Takao a Tokyo, con sentieri panoramici e viste spettacolari sulla città e sui monti circostanti. Un'esperienza perfetta per gli amanti della natura e del trekking.",
-    "categoria": [
-      "natura",
-      "sport"
-    ],
-    "target": [
-      "famiglie",
-      "sportivi",
+      "coppie",
       "giovani"
     ]
   },
-  "28": {
-    "descrizione": "Un affascinante giro in bicicletta attorno al Palazzo Imperiale di Tokyo, combinando cultura e natura tra i giardini storici e i paesaggi urbani della capitale giapponese.",
+  "27": {
+    "descrizione": "Escursione affascinante sul monte Takao, a un'ora da Tokyo, attraversando boschi rigogliosi con sentieri ben tracciati fino alla vetta a 600 metri dove si gode una vista panoramica spettacolare della città e delle montagne circostanti.",
     "categoria": [
-      "cultura",
       "natura",
       "sport"
     ],
     "target": [
-      "giovani",
       "famiglie",
+      "giovani",
+      "sportivi"
+    ]
+  },
+  "28": {
+    "descrizione": "Pedalata affascinante attorno al Palazzo Imperiale di Tokyo, immersi nel verde dei giardini storici e tra le atmosfere della capitale giapponese. Un'esperienza perfetta per scoprire paesaggi urbani e naturali al ritmo della bicicletta.",
+    "categoria": [
+      "sport",
+      "natura"
+    ],
+    "target": [
+      "giovani",
       "sportivi",
       "coppie"
     ]
   },
   "29": {
-    "descrizione": "Immergiti nelle acque termali di un autentico onsen giapponese a Tokyo, dove potrai rilassarti completamente immerso in un'esperienza di benessere tradizionale. Un momento di pura serenità lontano dal caos della città.",
+    "descrizione": "Un'esperienza di benessere autentico nei tradizionali bagni giapponesi: ci si immerge in acque termali a temperature ideali, respira il vapore rilassante, e trascorre il tempo in un ritmo lento immerso nella tranquillità e nella cultura del bagno pubblico giapponese.",
     "categoria": [
+      "relax"
+    ],
+    "target": [
+      "coppie",
+      "altro"
+    ]
+  },
+  "30": {
+    "descrizione": "Una crociera suggestiva lungo la baia di Tokyo al tramonto, dove ammirare lo skyline illuminato della città riflesso sull'acqua mentre si naviga con ritmo tranquillo, sorseggiando una bevanda e godendo della brezza serale.",
+    "categoria": [
+      "nightlife",
       "relax"
     ],
     "target": [
@@ -329,22 +317,10 @@
       "giovani"
     ]
   },
-  "30": {
-    "descrizione": "Una suggestiva crociera serale nella baia di Tokyo che offre viste panoramiche spettacolari dello skyline illuminato e della città. Un'esperienza romantica perfetta per ammirare i monument cittadini dall'acqua al tramonto.",
-    "categoria": [
-      "relax",
-      "cultura"
-    ],
-    "target": [
-      "coppie",
-      "giovani"
-    ]
-  },
   "31": {
-    "descrizione": "Un'affascinante serata a Shinjuku dove gustare piatti tradizionali giapponesi in un accogliente izakaya, seguita da divertimento al karaoke con amici. Un'esperienza autentica della cultura notturna di Tokyo.",
+    "descrizione": "Una serata immersiva nel cuore di Shinjuku tra gli izakaya, piccoli locali autentici dove assaporare drink e stuzzichini giapponesi in un'atmosfera conviviale, seguita da sessioni di karaoke in cui cantare nel privato di una booth con amici. Un'esperienza di puro divertimento notturno a ritmo di Tokyo.",
     "categoria": [
-      "nightlife",
-      "cultura"
+      "nightlife"
     ],
     "target": [
       "giovani",
@@ -352,29 +328,27 @@
     ]
   },
   "32": {
-    "descrizione": "Scopri l'arte della cucina giapponese autentica con una lezione interattiva a Tokyo, dove imparerai a preparare piatti tradizionali e contemporanei da chef esperti. Un'esperienza immersiva per assaporare i segreti della gastronomia nipponica.",
+    "descrizione": "Impara a preparare piatti autentici della cucina giapponese in una cucina vera di Tokyo, sotto la guida di un maestro locale. Un'esperienza immersiva dove mani, sapori e tradizioni si incontrano.",
     "categoria": [
       "cultura"
     ],
     "target": [
-      "famiglie",
-      "giovani",
-      "coppie"
+      "coppie",
+      "giovani"
     ]
   },
   "33": {
-    "descrizione": "Una delle più importanti istituzioni museali del mondo, dove ammirare capolavori dell'arte da antiche civiltà ai giorni nostri. Un'esperienza imperdibile per gli amanti della cultura e della storia dell'arte.",
+    "descrizione": "Il Metropolitan Museum of Art è uno dei musei più prestigiosi al mondo, dove potrai passeggiare tra collezioni straordinarie che spaziano dall'arte egizia agli impressionisti, in sale sontuose e ricche di capolavori. Un'esperienza immersiva nell'arte che ti lascia con il passo lento e lo sguardo rapito.",
     "categoria": [
       "cultura"
     ],
     "target": [
-      "giovani",
       "coppie",
-      "altro"
+      "giovani"
     ]
   },
   "34": {
-    "descrizione": "Un affascinante tour che esplora i principali monumenti della Lower Manhattan, culminando con la visita alla Statua della Libertà, uno dei simboli più iconici degli Stati Uniti.",
+    "descrizione": "Esplora i grattacieli iconici e le strade storiche di Lower Manhattan a piedi, poi prendi il traghetto verso la Statua della Libertà per ammirare da vicino il monumento simbolo degli USA e goderti la vista panoramica del porto di New York.",
     "categoria": [
       "cultura"
     ],
@@ -385,35 +359,33 @@
     ]
   },
   "35": {
-    "descrizione": "Un affascinante giro in bicicletta attraverso Central Park, il polmone verde di New York, con vista su paesaggi naturali, laghi e monumenti storici della città. Un'esperienza perfetta per scoprire la bellezza urbana pedalando tra sentieri tranquilli e scorci mozzafiato.",
+    "descrizione": "Pedalare tra i viali e i laghi di Central Park, respirando l'aria fresca e ammirando il paesaggio urbano circondato dal verde. Un modo leggero e piacevole per esplorare il polmone verde di New York a ritmo lento.",
     "categoria": [
-      "sport",
-      "natura"
+      "natura",
+      "sport"
     ],
     "target": [
       "famiglie",
       "giovani",
-      "sportivi",
       "coppie"
     ]
   },
   "36": {
-    "descrizione": "Una splendida passeggiata tra i parchi urbani di New York, dalla famosa High Line sopraelevata fino al pittoresco Hudson River Park, offrendo paesaggi naturali e vedute suggestive della città.",
+    "descrizione": "Passeggiata rigenerante tra i giardini sopraelevati della High Line e le sponde del Hudson River, tra panchine verdi, installazioni d'arte e viste panoramiche sulla città che si alternano a momenti di pura contemplazione.",
     "categoria": [
       "natura",
-      "cultura"
+      "relax"
     ],
     "target": [
-      "famiglie",
-      "coppie"
+      "coppie",
+      "altro"
     ]
   },
   "37": {
-    "descrizione": "Una crociera affascinante lungo il fiume Hudson al tramonto, con vista spettacolare sugli skyline di Manhattan e la Statua della Libertà. Un'esperienza romantica e suggestiva perfetta per ammirare la bellezza di New York.",
+    "descrizione": "Navigare sull'Hudson al tramonto ammirando lo skyline illuminato di Manhattan dal fiume, con musica, cocktail e cena a bordo mentre la città si accende di luci.",
     "categoria": [
-      "natura",
-      "cultura",
-      "nightlife"
+      "nightlife",
+      "relax"
     ],
     "target": [
       "coppie",
@@ -421,7 +393,7 @@
     ]
   },
   "38": {
-    "descrizione": "Trascorri una giornata rigenerante presso una spa esclusiva di Manhattan, dove potrai usufruire di trattamenti rilassanti, massaggi e percorsi benessere nel cuore di New York.",
+    "descrizione": "Una giornata rigenerante in una spa di lusso a Manhattan, dove lasciarsi coccolare con trattamenti benessere esclusivi: massaggi, bagni termali e terapie di bellezza in un'atmosfera di pace e tranquillità lontana dal caos della città.",
     "categoria": [
       "relax"
     ],
@@ -431,9 +403,8 @@
     ]
   },
   "39": {
-    "descrizione": "Immergiti nella magia del jazz autentico in uno dei club storici del Greenwich Village, dove musicisti talentuosi suonano dal vivo in un'atmosfera intima e affascinante.",
+    "descrizione": "Una serata immersiva nel leggendario Greenwich Village: concerti live di jazz in un'atmosfera intima e affumicata, tra il suono ipnotico della tromba e il ritmo del contrabbasso, seduti a un tavolo con un cocktail in mano.",
     "categoria": [
-      "cultura",
       "nightlife"
     ],
     "target": [
@@ -442,15 +413,377 @@
     ]
   },
   "40": {
-    "descrizione": "Un affascinante tour attraverso i migliori ristoranti e mercati alimentari di Brooklyn, alla scoperta della ricca scena culinaria locale e dei sapori autentici di New York.",
+    "descrizione": "Un percorso enogastronomico tra le strade affascinanti di Brooklyn, alla scoperta di botteghe storiche, ristoranti trendy e locali autentici, dove assaggiare specialità culinarie locali e internazionali in un'atmosfera vivace e creativa.",
     "categoria": [
-      "cultura",
+      "cultura"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "41": {
+    "descrizione": "Un tuffo nell'arte impressionista nelle belle sale dell'antico museo parigino lungo la Senna: ammiri i capolavori di Monet, Renoir e Van Gogh passeggiando tra dipinti dai colori vibranti che trasportano in un mondo di luce e movimento.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "coppie",
+      "altro"
+    ]
+  },
+  "42": {
+    "descrizione": "Esplorazione affascinante delle antiche gallerie sotterranee di Parigi, ricche di storia e ossari storici, in un'atmosfera suggestiva e misteriosa che consente di scoprire i segreti nascosti sotto la città.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "giovani",
+      "coppie"
+    ]
+  },
+  "43": {
+    "descrizione": "Una passeggiata rigenerante nel grande parco parigino, tra boschi e prati, ideale per camminare al ritmo della natura tra alberi centenari e piccoli laghetti. Un'esperienza di tranquillità a due passi dalla città.",
+    "categoria": [
+      "natura",
       "relax"
+    ],
+    "target": [
+      "coppie",
+      "famiglie"
+    ]
+  },
+  "44": {
+    "descrizione": "Una corsa guidata lungo il suggestivo Canal Saint-Martin, tra ponti e borgata parigina, immerso in un'atmosfera rilassata e pittoresca tipica di Parigi.",
+    "categoria": [
+      "sport"
+    ],
+    "target": [
+      "sportivi",
+      "giovani"
+    ]
+  },
+  "45": {
+    "descrizione": "Pagaiare dolcemente sulla Marna attraverso i paesaggi verdi di Parigi, tra ponti storici e sponde boscose, in un'atmosfera tranquilla lontano dalla frenesia della città.",
+    "categoria": [
+      "natura"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "46": {
+    "descrizione": "Immergiti nella tradizione orientale del hammam parigino: tra il vapore avvolgente della sauna turca e il piacere del massaggio rigenerante, troverai un momento di assoluto relax e benessere lontano dalla fretta della città.",
+    "categoria": [
+      "relax"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "47": {
+    "descrizione": "Immergiti nella mitica atmosfera di Saint-Germain in una serata esclusiva tra i vecchi jazz club parigini, dove il ritmo coinvolgente dei musicisti dal vivo riempie locali intimi mentre sorseggi un drink a lume di candela.",
+    "categoria": [
+      "nightlife"
+    ],
+    "target": [
+      "giovani",
+      "coppie"
+    ]
+  },
+  "48": {
+    "descrizione": "Scopri i capolavori architettonici di Gaudí passeggiando tra le ondulate facciate organiche e gli interni lussureggianti di questi due edifici modernisti. Un'immersione affascinante nell'arte e nel design catalano del primo Novecento.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "49": {
+    "descrizione": "Un'affascinante passeggiata tra le strade medievali e i vicoli gotici di Barcellona, scoprendo chiese storiche, palazzi antichi e piazze caratteristiche piene di storia.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "coppie",
+      "giovani",
+      "famiglie"
+    ]
+  },
+  "50": {
+    "descrizione": "Una passeggiata tra le forme sinuose e i mosaici colorati del celebre parco di Gaudí, tra terrazze panoramiche, giardini e architetture fantastiche che si affacciano su Barcellona.",
+    "categoria": [
+      "natura"
+    ],
+    "target": [
+      "coppie",
+      "famiglie"
+    ]
+  },
+  "51": {
+    "descrizione": "Pagaiare lungo la costa di Barcellona in kayak, scivolando sull'acqua tra spiagge affollate e scogliere rocciose, respirando l'aria salata del Mediterraneo e godendo di viste panoramiche sulla città.",
+    "categoria": [
+      "sport",
+      "natura"
+    ],
+    "target": [
+      "giovani",
+      "sportivi",
+      "coppie"
+    ]
+  },
+  "52": {
+    "descrizione": "Percorri in e-bike i sentieri panoramici di Montjuïc, pedalando tra boschi mediterranei e giardini terrazzati con viste spettacolari su Barcellona e il mare. Un'esperienza energica a ritmo moderato, perfetta per chi vuole muoversi senza sforzo eccessivo respirando aria fresca e scoprendo scorci nascosti della collina.",
+    "categoria": [
+      "sport",
+      "natura"
+    ],
+    "target": [
+      "sportivi",
+      "coppie"
+    ]
+  },
+  "53": {
+    "descrizione": "Un'esperienza di benessere nel cuore della città vecchia di Barcellona, dove immergersi nelle acque calde e rilassanti di un centro termale storico. Un momento di tranquillità lontano dalla frenesia urbana, tra vapori rigeneranti e atmosfere di quiete.",
+    "categoria": [
+      "relax"
+    ],
+    "target": [
+      "coppie",
+      "altro"
+    ]
+  },
+  "54": {
+    "descrizione": "Una notte scatenata a ritmo di musica elettronica in un esclusivo club sul lungomare di Barcellona, dove luci stroboscopiche e beat ipnotizzanti creano un'atmosfera elettrizzante direttamente affacciati sul mare.",
+    "categoria": [
+      "nightlife"
+    ],
+    "target": [
+      "giovani"
+    ]
+  },
+  "55": {
+    "descrizione": "Passeggiata tra le rovine affascinanti dell'Agorà antica di Atene, dove ci si immerge nella storia della democrazia greca camminando tra colonne e basamenti di templi, prima di raggiungere il maestoso Tempio di Efesto con i suoi marmi perfettamente conservati a dominio della città.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "giovani",
+      "coppie",
+      "altro"
+    ]
+  },
+  "56": {
+    "descrizione": "Un tuffo nell'antica Grecia tra i capolavori scultorei e architettonici dell'Acropoli, esposti in un museo moderno con vista spettacolare sulla città di Atene. Un percorso affascinante tra marmi, statue e reperti che raccontano la gloria dell'età classica, passeggiando tra sale luminose e suggestive.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "famiglie",
+      "giovani",
+      "coppie"
+    ]
+  },
+  "57": {
+    "descrizione": "Una tranquilla passeggiata tra i viali alberati e i giardini fioriti del cuore verde di Atene, dove rilassarsi seduti sulle panchine, osservare le fontane e respirare aria fresca lontani dal caos della città.",
+    "categoria": [
+      "natura",
+      "relax"
+    ],
+    "target": [
+      "famiglie",
+      "coppie"
+    ]
+  },
+  "58": {
+    "descrizione": "Impara i segreti del windsurf sulle acque cristalline della riviera ateniese, con istruttori esperti che ti guidano tra le onde e il vento. Un'esperienza adrenalinica a contatto con il mare e il sole, perfetta per chi cerca emozioni e sfida con la natura.",
+    "categoria": [
+      "sport",
+      "natura"
+    ],
+    "target": [
+      "giovani",
+      "sportivi"
+    ]
+  },
+  "59": {
+    "descrizione": "Una giornata indimenticabile a vela lungo la costa ateniese, dove il ritmo lento della barca permette di ammirare le scogliere affacciate sul mare Egeo e piccole calette nascoste, mentre il vento gonfia le vele e il sole tramonta sui templi antichi sullo sfondo.",
+    "categoria": [
+      "natura"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "60": {
+    "descrizione": "Immergiti nel lusso di una spa ad Atene: accedi a una struttura di benessere nel cuore elegante di Kolonaki, dove lasciarti coccolare con massaggi rigeneranti e trattamenti personalizzati in un'atmosfera di pura tranquillità.",
+    "categoria": [
+      "relax"
+    ],
+    "target": [
+      "coppie",
+      "altro"
+    ]
+  },
+  "61": {
+    "descrizione": "Una serata conviviale nella storica taverna di Plaka con musica greca dal vivo: si cena tra le tavole strette e le luci calde mentre i musicisti suonano bouzouki, creando un'atmosfera autentica tra balli spontanei e canti tradizionali.",
+    "categoria": [
+      "nightlife",
+      "cultura"
     ],
     "target": [
       "coppie",
       "giovani",
       "altro"
+    ]
+  },
+  "62": {
+    "descrizione": "Un'escursione affascinante nel cuore verde di Tokyo: il maestoso tempio Meiji circondato da una foresta di 120mila alberi. Passeggia lungo i sentieri tranquilli, scopri i giardini tradizionali giapponesi e respira l'atmosfera serena di questo luogo sacro lontano dal caos della città.",
+    "categoria": [
+      "natura",
+      "cultura"
+    ],
+    "target": [
+      "coppie",
+      "famiglie"
+    ]
+  },
+  "63": {
+    "descrizione": "Passeggiata tra le vivaci strade di Akihabara per scoprire i negozi di manga, anime, videogiochi e la tecnologia. Un'immersione nel pulsante mondo della cultura pop giapponese, tra lucide insegne, vibranti atmosfere urbane e locali caratteristici.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "giovani"
+    ]
+  },
+  "64": {
+    "descrizione": "Una passeggiata tranquilla nel celebre parco di Ueno, tra alberi centenari, laghi sereni e templi nascosti, perfetta per respirare natura nel cuore di Tokyo. Un'esperienza rigenerante tra spazi verdi e momenti di quiete.",
+    "categoria": [
+      "natura",
+      "relax"
+    ],
+    "target": [
+      "coppie",
+      "famiglie"
+    ]
+  },
+  "65": {
+    "descrizione": "Immergerti nell'antica arte del judo in un dojo tradizionale di Tokyo, dove maestri qualificati insegnano tecniche di equilibrio e proiezione in un'atmosfera di disciplina e rispetto. Un'esperienza autentica che combina allenamento fisico intenso e filosofia marziale giapponese.",
+    "categoria": [
+      "sport"
+    ],
+    "target": [
+      "giovani",
+      "sportivi"
+    ]
+  },
+  "66": {
+    "descrizione": "Una gita affascinante ai laghi vulcanici ai piedi del Monte Fuji, dove ammirare le acque cristalline circondate da boschi rigogliosi e godere di viste spettacolari sulla montagna sacra durante passeggiate a ritmo tranquillo tra boschi e sponde tranquille.",
+    "categoria": [
+      "natura"
+    ],
+    "target": [
+      "famiglie",
+      "coppie"
+    ]
+  },
+  "67": {
+    "descrizione": "Un'esperienza immersiva nella tradizione giapponese: seduti in una sala tatami, si assiste alla preparazione rituale del matcha secondo l'antico protocollo, con movimenti precisi e contemplativi. Un momento di quiete e armonia dove si sorseggia il tè verde accompagnati da dolcetti tipici.",
+    "categoria": [
+      "relax"
+    ],
+    "target": [
+      "coppie",
+      "altro"
+    ]
+  },
+  "68": {
+    "descrizione": "Una serata affascinante tra i microscopici bar tradizionali di Golden Gai, dove strade strette e lanterne rosse creano un'atmosfera intima e nostalgica. Ci si siede su pochi sgabelli, si chiacchiera con il barman e con gli altri avventori, assaggiando sake e whisky giapponese in un'esperienza autentica e conviviale.",
+    "categoria": [
+      "nightlife"
+    ],
+    "target": [
+      "giovani",
+      "coppie"
+    ]
+  },
+  "69": {
+    "descrizione": "Un'immersione affascinante nelle meraviglie del pianeta e dell'universo, dove scheletri di dinosauri giganteschi, diorami naturalistici e exhibit interattivi catturano lo stupore del visitatore in un'atmosfera di scoperta continua.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "famiglie",
+      "giovani"
+    ]
+  },
+  "70": {
+    "descrizione": "Una passeggiata tra i capolavori dell'arte moderna e contemporanea, dalla Starry Night al pop art, in uno spazio luminoso e intimo che invita a soffermarsi con calma davanti a ogni opera.",
+    "categoria": [
+      "cultura"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "71": {
+    "descrizione": "Una piacevole passeggiata tra i viali alberati e gli specchi d'acqua del celebre parco urbano di Brooklyn, dove rilassarsi lontano dal caos cittadino respirando aria fresca e godendo di vedute panoramiche sulla skyline di Manhattan.",
+    "categoria": [
+      "natura",
+      "relax"
+    ],
+    "target": [
+      "famiglie",
+      "coppie"
+    ]
+  },
+  "72": {
+    "descrizione": "Lezione di boxe in una palestra di Brooklyn dove imparare tecniche di pugilato in un ambiente autentico e energico, con il ritmo dei guantoni sul sacco e l'atmosfera vera dello sport newyorchese.",
+    "categoria": [
+      "sport"
+    ],
+    "target": [
+      "giovani",
+      "sportivi"
+    ]
+  },
+  "73": {
+    "descrizione": "Un'avventura adrenalinica remando in kayak lungo il fiume Hudson, tra gli edifici iconici di Manhattan e paesaggi naturali sorprendenti, immersi nel ritmo della città che scorre sulle acque.",
+    "categoria": [
+      "sport",
+      "natura"
+    ],
+    "target": [
+      "sportivi",
+      "giovani"
+    ]
+  },
+  "74": {
+    "descrizione": "Lezione di yoga all'aperto nel suggestivo Bryant Park di Manhattan, dove praticherai asana e meditazione circondato dal verde urbano, tra i grattacieli di New York, in un'atmosfera di serenità e benessere.",
+    "categoria": [
+      "relax",
+      "sport"
+    ],
+    "target": [
+      "coppie",
+      "giovani"
+    ]
+  },
+  "75": {
+    "descrizione": "Serata di risate in un intimo locale del Lower East Side dove comediani salono sul palco per monologhi esilaranti. Un'atmosfera vivace e informale tra il pubblico, drink in mano e battute che prendono di mira i vizi della vita quotidiana e la società.",
+    "categoria": [
+      "nightlife"
+    ],
+    "target": [
+      "giovani",
+      "coppie"
     ]
   }
 }
