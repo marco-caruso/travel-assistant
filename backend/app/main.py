@@ -7,6 +7,8 @@ from app.api.attivita import router as attivita_router
 from app.api.itinerari import router as itinerari_router
 from app.api.chat import router as chat_router
 from app.api.auth import router as auth_router
+from app.api.prenotazioni import router as prenotazioni_router
+from app.api.destinazioni import router as destinazioni_router
 
 app = FastAPI(title="Travel Assistant API")
 
@@ -16,7 +18,8 @@ app.include_router(attivita_router)
 app.include_router(itinerari_router)
 app.include_router(chat_router)
 app.include_router(auth_router)
-
+app.include_router(prenotazioni_router)
+app.include_router(destinazioni_router)
 
 @app.get("/")
 def root():
