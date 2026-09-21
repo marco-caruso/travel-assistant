@@ -1,6 +1,9 @@
 # Punto di ingresso dell'applicazione: crea il server FastAPI
 # e collega i vari gruppi di endpoint (hotel, voli, attività)
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
+from app.rag.indicizza_attivita import assicura_indice
 from app.api.hotels import router as hotels_router
 from app.api.voli import router as voli_router
 from app.api.attivita import router as attivita_router
@@ -10,7 +13,15 @@ from app.api.auth import router as auth_router
 from app.api.prenotazioni import router as prenotazioni_router
 from app.api.destinazioni import router as destinazioni_router
 
-app = FastAPI(title="Travel Assistant API")
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # All'avvio: se l'indice vettoriale non esiste ancora, lo costruisce
+    assicura_indice()
+    yield
+
+
+app = FastAPI(title="Travel Assistant API", lifespan=lifespan)
 
 app.include_router(hotels_router)
 app.include_router(voli_router)

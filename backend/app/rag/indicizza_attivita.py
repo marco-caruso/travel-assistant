@@ -60,5 +60,17 @@ def main() -> None:
     print(f"Indicizzate {len(ids)} attività nella collection '{collection.name}'.")
 
 
+def assicura_indice() -> None:
+    """Costruisce l'indice vettoriale se la collection è vuota (es. dopo un clone
+    pulito, dato che data/chroma/ non è versionata). Se l'indice c'è già non fa nulla."""
+    if collection.count() > 0:
+        return
+    print(
+        "Indice vettoriale assente: lo costruisco ora. Al primo avvio scarica il modello "
+        "di embedding, può richiedere qualche decina di secondi."
+    )
+    main()
+
+
 if __name__ == "__main__":
     main()
