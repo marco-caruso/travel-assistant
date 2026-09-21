@@ -58,8 +58,8 @@ Si apre su `http://localhost:8501`. Se Streamlit chiede un'email al primo avvio,
 2. Nella chat scrivi per esempio: *«Vorrei andare a New York a giugno, mi piacciono
    cultura e relax, budget 2000 €»*. Se manca qualcosa, l'assistente lo chiede.
 3. Ricevi un itinerario con i costi. Per prenotare scrivi *«sì»* oppure usa il pulsante
-   **Prenota questo itinerario**. Puoi anche cambiare idea: *«no grazie»*, oppure
-   modificare budget, mese o preferenze e ne viene generato uno nuovo.
+   **Prenota questo itinerario**. Puoi anche cambiare idea con il pulsante **Non prenotare**
+   (o scrivendo *«no grazie»*), oppure modificare budget, mese o preferenze: ne viene generato uno nuovo.
 4. In **Le mie prenotazioni** trovi tutte le prenotazioni dell'utente, con il loro codice.
 
 Destinazioni disponibili: Francia (Parigi), Spagna (Barcellona), Grecia (Atene),
@@ -124,7 +124,7 @@ Gli endpoint contrassegnati con 🔒 richiedono l'intestazione `Authorization: B
   nel budget. Si sceglie la combinazione volo + hotel più economica di quella durata, poi
   un'attività al giorno, la più adatta alle preferenze (RAG) e compatibile col budget residuo.
 - **Prenotazione.** «Sì», «no» e simili sono riconosciuti da regole (`core/conferma.py`), non
-  dal modello. Il client invia solo gli id: il server rilegge tutto dal database,
+  dal modello; in alternativa ci sono i pulsanti «Prenota» e «Non prenotare». Il client invia solo gli id: il server rilegge tutto dal database,
   ricontrolla disponibilità e budget, ricalcola il prezzo e salva in un'unica transazione.
 
 ## Limiti dichiarati e sviluppi futuri
@@ -133,7 +133,7 @@ Scelte fatte per restare nei tempi della challenge:
 
 - **Nessun controllo di capienza:** la disponibilità di hotel e attività è un intervallo di
   date, non un calendario con posti; la stessa camera può essere prenotata più volte.
-- **Una città per nazione**, cinque destinazioni, un'attività per giorno.
+- **Una città per nazione**, cinque destinazioni, 15 attività per città, un'attività per giorno.
 - **Pagamento non simulato**: la prenotazione nasce già «confermata».
 - **Sessione Streamlit in memoria**: ricaricando la pagina del browser si rifà il login;
   la cronologia delle conversazioni non è salvata.
@@ -156,6 +156,9 @@ uv run python -m app.db.seed                    # cancella e ricrea tutte le tab
 uv run python -m app.rag.genera_descrizioni     # chiama Claude (costo trascurabile) e riscrive il JSON delle descrizioni
 uv run python -m app.rag.indicizza_attivita     # aggiorna l'indice vettoriale
 ```
+
+Se hai tolto o cambiato attività, cancella prima `data/chroma/` (`rm -rf ../data/chroma`): l'indicizzazione
+aggiorna le voci esistenti ma non elimina quelle vecchie.
 
 Il seed usa un valore fisso di riproducibilità, quindi a parità di codice produce gli stessi
 dati; le date dei voli, però, partono dal giorno in cui viene eseguito.

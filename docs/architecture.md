@@ -83,7 +83,9 @@ Limite osservato (Parigi): le prime posizioni sono coerenti con la preferenza (r
 - **Conferma** (`core/conferma.py`): «sì» e «no» sono riconosciuti da regole (tutte le parole del messaggio
   devono essere parole di conferma o neutre, senza accenti né maiuscole). Il caso «sì ma costa troppo» non
   è una conferma e genera una nuova proposta: prenotare per un equivoco sarebbe l'errore peggiore. Se la
-  nuova proposta è identica alla precedente, l'assistente lo dice e spiega cosa può cambiare.
+  nuova proposta è identica alla precedente, l'assistente lo dice e spiega cosa può cambiare. Il
+  frontend affianca a questa regola due pulsanti, «Prenota questo itinerario» e «Non prenotare»,
+  che non lasciano margine di interpretazione; il rifiuto si limita ad azzerare la proposta nel client.
 
 ## Generazione dell'itinerario
 
@@ -122,7 +124,7 @@ stessi controlli del pulsante.
 
 Streamlit, scelto consapevolmente al posto di HTML/JS o React: la traccia dice che la grafica non è
 oggetto di valutazione, e il tempo è meglio speso su backend e AI. È un **client HTTP puro**: importa solo
-`requests` e `streamlit`, non tocca mai il database né la ricerca semantica. Passare a React vorrebbe dire
+`requests`, `streamlit` e la libreria standard, non tocca mai il database né la ricerca semantica. Passare a React vorrebbe dire
 sostituire un solo file, senza toccare l'API. La sessione (token, chat) sta in `st.session_state`. Il tema
 viola in modalità chiara e scura è in `.streamlit/config.toml`. Dopo una prenotazione la chat riparte da
 zero, altrimenti l'estrazione riaggregherebbe i dati del viaggio appena prenotato.
