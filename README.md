@@ -28,7 +28,8 @@ cp .env.example .env
 
 - `ANTHROPIC_API_KEY=` la chiave che ho fornito;
 - `JWT_SECRET=` una stringa casuale a tua scelta, per esempio generata con
-  `python3 -c "import secrets; print(secrets.token_hex(32))"`.
+  `python3 -c "import secrets; print(secrets.token_hex(32))"` (su Windows, se `python3` non è
+  riconosciuto, usa `python` al posto di `python3`).
 
 Senza `JWT_SECRET` il login fallisce con errore: è voluto, per non usare mai un segreto di ripiego.
 
@@ -166,8 +167,9 @@ uv run python -m app.rag.genera_descrizioni     # chiama Claude (costo trascurab
 uv run python -m app.rag.indicizza_attivita     # aggiorna l'indice vettoriale
 ```
 
-Se hai tolto o cambiato attività, cancella prima `data/chroma/` (`rm -rf ../data/chroma`): l'indicizzazione
-aggiorna le voci esistenti ma non elimina quelle vecchie.
+Se hai tolto o cambiato attività, cancella prima `data/chroma/` (`rm -rf ../data/chroma` su macOS/Linux,
+`Remove-Item -Recurse -Force ../data/chroma` su Windows PowerShell): l'indicizzazione aggiorna le voci
+esistenti ma non elimina quelle vecchie.
 
 Il seed usa un valore fisso di riproducibilità, quindi a parità di codice produce gli stessi
 dati; le date dei voli, però, partono dal giorno in cui viene eseguito.
