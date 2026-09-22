@@ -26,7 +26,7 @@ cp .env.example .env
 
 **2. Configurazione.** Apri `.env` e compila due variabili, senza spazi né virgolette:
 
-- `ANTHROPIC_API_KEY=` la chiave che ti ho fornito;
+- `ANTHROPIC_API_KEY=` la chiave che ho fornito;
 - `JWT_SECRET=` una stringa casuale a tua scelta, per esempio generata con
   `python3 -c "import secrets; print(secrets.token_hex(32))"`.
 
