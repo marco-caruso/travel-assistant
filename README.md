@@ -17,9 +17,11 @@ Le motivazioni delle scelte sono in [`docs/architecture.md`](docs/architecture.m
 Requisiti: Python 3.11, [uv](https://docs.astral.sh/uv/), una API key Anthropic
 (la fornisco insieme al link della repository).
 
-**1. Installazione** (dalla radice del progetto)
+**1. Installazione**
 
 ```bash
+git clone https://github.com/marco-caruso/travel-assistant.git
+cd travel-assistant
 uv sync
 cp .env.example .env
 ```
