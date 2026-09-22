@@ -55,12 +55,21 @@ Si apre su `http://localhost:8501`. Se Streamlit chiede un'email al primo avvio,
 ## Come provarlo
 
 1. Nella scheda **Registrati** crea un account (l'email può essere inventata) ed entra.
+
+   ![Registrazione](docs/screenshots/Registrazione.png)
 2. Nella chat scrivi per esempio: *«Vorrei andare a New York a giugno, mi piacciono
    cultura e relax, budget 2000 €»*. Se manca qualcosa, l'assistente lo chiede.
+
+  ![Chat](docs/screenshots/Chat.png)
+
 3. Ricevi un itinerario con i costi. Per prenotare scrivi *«sì»* oppure usa il pulsante
    **Prenota questo itinerario**. Puoi anche cambiare idea con il pulsante **Non prenotare**
    (o scrivendo *«no grazie»*), oppure modificare budget, mese o preferenze: ne viene generato uno nuovo.
+
+   
 4. In **Le mie prenotazioni** trovi tutte le prenotazioni dell'utente, con il loro codice.
+
+   ![Le mie prenotazioni](docs/screenshots/Prenotazioni.png)
 
 Destinazioni disponibili: Francia (Parigi), Spagna (Barcellona), Grecia (Atene),
 Giappone (Tokyo), Stati Uniti (New York). I voli coprono le date fino a ottobre 2027.
