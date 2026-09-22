@@ -14,8 +14,30 @@ Le motivazioni delle scelte sono in [`docs/architecture.md`](docs/architecture.m
 
 ## Avvio rapido
 
-Requisiti: Python 3.11, [uv](https://docs.astral.sh/uv/), una API key Anthropic
+Requisiti: Git, Python 3.11, [uv](https://docs.astral.sh/uv/), una API key Anthropic
 (la fornisco insieme al link della repository).
+
+<details>
+<summary>Non hai questi strumenti installati? Espandi</summary>
+
+**Git**
+- Windows: [git-scm.com/download/win](https://git-scm.com/download/win)
+- macOS: `xcode-select --install` (installa i tool da riga di comando, git incluso)
+- Linux: `sudo apt install git` (Debian/Ubuntu) o equivalente per la tua distro
+
+**Python 3.11**
+- Windows/macOS: [python.org/downloads](https://www.python.org/downloads/) (su Windows, durante l'installazione spunta "Add python.exe to PATH")
+- Linux: `sudo apt install python3.11` o equivalente
+
+**uv**
+- Windows (PowerShell): `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+- macOS/Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
+
+Dopo ogni installazione, **chiudi e riapri il terminale** prima di continuare: il PATH si
+aggiorna solo così. Puoi verificare con `git --version`, `python3 --version` (o `python
+--version` su Windows) e `uv --version`.
+
+</details>
 
 **1. Installazione**
 
