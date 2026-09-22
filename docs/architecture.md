@@ -1,4 +1,4 @@
-# Note architetturali — Travel Assistant
+# Note architetturali - Travel Assistant
 
 Questo documento spiega le scelte principali del progetto e il loro perché. Per
 installare ed eseguire tutto vedi il [README](../README.md).
